@@ -1,3 +1,14 @@
+/**
+ * jquery.accordion https://github.com/matoilic/jquery.accordion
+ *
+ * @version v0.1.1
+ * @author Mato Ilic <info@matoilic.ch>
+ * @copyright 2011 Mato Ilic
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ * http://www.opensource.org/licenses/mit-license.php
+ * http://www.gnu.org/licenses/gpl.html
+ */
 ;(function($) {
     var fixIE = ($.browser.msie && parseInt($.browser.version) < 8),
         closed = {
