@@ -3,48 +3,177 @@
     <head>
         <meta charset="utf-8">
         <title>jQuery Accordion</title>
+        <link href="demo/style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <ul>
-            <li>
-                <div class="handle">Panel 1</div>
-                <div class="panel">
-                    Panel 1<br>
-                    Panel 1<br>
-                    Panel 1<br>
-                    Panel 1<br>
-                    Panel 1<br>
-                    Panel 1<br>                    
-                </div>
-            </li>
-            <li>
-                <div class="handle">Panel 2</div>
-                <div class="panel">
-                    Panel 2<br>
-                    Panel 2<br>
-                    Panel 2<br>
-                    Panel 2<br>
-                    Panel 2<br>
-                    Panel 2<br>                    
-                </div>
-            </li>
-            <li>
-                <div class="handle">Panel 3</div>
-                <div class="panel">
-                    Panel 3<br>
-                    Panel 3<br>
-                    Panel 3<br>
-                    Panel 3<br>
-                    Panel 3<br>
-                    Panel 3<br>                    
-                </div>
-            </li>
-            
-        </ul>
-        <script src="vendor/jquery.js" type="text/javascript" charset="utf-8"></script>
+        <h1>jQuery Accordion Plugin</h1>
+        <section id="sample1">
+            <h2>Default behavior</h2>
+            <code>$('#sample1 ul').accordion();</code>
+            <ul>
+                <li>
+                    <div class="handle">Login</div>
+                    <div class="panel">
+                        <form action="#" method="post">
+                            <p>
+                                <label for="username1">Username</label><br>
+                                <input type="text" name="username" id="username1">
+                            </p>
+                            <p>
+                                <label for="password1">Password</label><br>
+                                <input type="password" name="password" id="password1">
+                            </p>
+                            <p>
+                                <input type="submit" value="Login">
+                            </p>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <div class="handle">Cupcakes</div>
+                    <div class="panel">
+                        <p>
+                            Cupcake ipsum dolor sit amet pastry chupa chups pie gummi bears. Biscuit marzipan croissant
+                            sweet roll marzipan icing cotton candy apple pie. Cheesecake candy canes biscuit wafer soufflé
+                            lollipop.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="handle">Strawberries</div>
+                    <div class="panel">
+                        <img src="demo/strawberries.jpg">
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="sample2">
+            <h2>Toggling enabled</h2>
+            <code>$('#sample2 ul').accordion({toggle: true, start: 0});</code>
+            <ul>
+                <li>
+                    <div class="handle">Login</div>
+                    <div class="panel">
+                        <form action="#" method="post">
+                            <p>
+                                <label for="username2">Username</label><br>
+                                <input type="text" name="username" id="username2">
+                            </p>
+                            <p>
+                                <label for="password2">Password</label><br>
+                                <input type="password" name="password" id="password2">
+                            </p>
+                            <p>
+                                <input type="submit" value="Login">
+                            </p>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <div class="handle">Cupcakes</div>
+                    <div class="panel">
+                        <p>
+                            Cupcake ipsum dolor sit amet pastry chupa chups pie gummi bears. Biscuit marzipan croissant
+                            sweet roll marzipan icing cotton candy apple pie. Cheesecake candy canes biscuit wafer soufflé
+                            lollipop.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="handle">Strawberries</div>
+                    <div class="panel">
+                        <img src="demo/strawberries.jpg">
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="sample3">
+            <h1>Multi-mode</h1>
+            <code>$('#sample3 ul').accordion({multiple: true});</code>
+            <ul>
+                <li>
+                    <div class="handle">Login</div>
+                    <div class="panel">
+                        <form action="#" method="post">
+                            <p>
+                                <label for="username3">Username</label><br>
+                                <input type="text" name="username" id="username3">
+                            </p>
+                            <p>
+                                <label for="password2">Password</label><br>
+                                <input type="password" name="password" id="password3">
+                            </p>
+                            <p>
+                                <input type="submit" value="Login">
+                            </p>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <div class="handle">Cupcakes</div>
+                    <div class="panel">
+                        <p>
+                            Cupcake ipsum dolor sit amet pastry chupa chups pie gummi bears. Biscuit marzipan croissant
+                            sweet roll marzipan icing cotton candy apple pie. Cheesecake candy canes biscuit wafer soufflé
+                            lollipop.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="handle">Strawberries</div>
+                    <div class="panel">
+                        <img src="demo/strawberries.jpg">
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="sample4">
+            <h2>Static element</h2>
+            <code>$('#sample4 ul').accordion({toggle: true});</code>
+            <ul>
+                <li class="static">
+                    <div class="handle">Login</div>
+                    <div class="panel">
+                        <form action="#" method="post">
+                            <p>
+                                <label for="username4">Username</label><br>
+                                <input type="text" name="username" id="username4">
+                            </p>
+                            <p>
+                                <label for="password4">Password</label><br>
+                                <input type="password" name="password" id="password4">
+                            </p>
+                            <p>
+                                <input type="submit" value="Login">
+                            </p>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <div class="handle">Cupcakes</div>
+                    <div class="panel">
+                        <p>
+                            Cupcake ipsum dolor sit amet pastry chupa chups pie gummi bears. Biscuit marzipan croissant
+                            sweet roll marzipan icing cotton candy apple pie. Cheesecake candy canes biscuit wafer soufflé
+                            lollipop.
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <div class="handle">Strawberries</div>
+                    <div class="panel">
+                        <img src="demo/strawberries.jpg">
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <script src="vendor/jquery.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="jquery.accordion.js" type="text/javascript" charset="utf-8"></script>
         <script type="text/javascript" charset="utf-8">
-            $('ul').accordion({toggle: false, multiple: false, start: 0});
+            $('#sample1 ul').accordion();
+            $('#sample2 ul').accordion({toggle: true, start: 0});
+            $('#sample3 ul').accordion({multiple: true});
+            $('#sample4 ul').accordion({toggle: true});
         </script>
     </body>
 </html>
