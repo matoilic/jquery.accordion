@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>jQuery Accordion</title>
-        <link href="demo/style.css" rel="stylesheet" type="text/css">
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <title>jQuery Accordion</title>
+    <link href="demo/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <a href="https://github.com/matoilic/jquery.accordion" class="fork"><img src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+    <div id="wrapper">
+        <div class="download">
+            <a href="https://github.com/matoilic/jquery.accordion/zipball/master" title="Download as zip">
+                <img border="0" width="60" src="https://github.com/images/modules/download/zip.png">
+            </a>
+            <a href="https://github.com/matoilic/jquery.accordion/tarball/master" title="Download as tar.gz">
+                <img border="0" width="60" src="https://github.com/images/modules/download/tar.png">
+            </a>
+        </div>
         <h1>jQuery Accordion Plugin</h1>
         <section id="sample1">
             <h2>Default behavior</h2>
@@ -167,13 +177,35 @@
                 </li>
             </ul>
         </section>
-        <script src="vendor/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-        <script src="jquery.accordion.js" type="text/javascript" charset="utf-8"></script>
-        <script type="text/javascript" charset="utf-8">
-            $('#sample1 ul').accordion();
-            $('#sample2 ul').accordion({toggle: true, start: 0});
-            $('#sample3 ul').accordion({multiple: true});
-            $('#sample4 ul').accordion({toggle: true});
-        </script>
-    </body>
+        <section id="download">
+            <h2>Download</h2>
+            <p>
+                You can download this project in either
+                <a href="https://github.com/matoilic/jquery.accordion/zipball/master">zip</a> or
+                <a href="https://github.com/matoilic/jquery.accordion/tarball/master">tar</a> formats.
+            </p>
+            <p>
+                You can also clone the project with <a href="http://git-scm.com">Git</a> by running:
+                <code>$ git clone git://github.com/matoilic/jquery.accordion</code>
+            </p>
+        </section>
+        <section id="licence">
+            <h2>Licence</h2>
+            <p>Copyright &copy; 2011 Mato Ilic</p>
+            <p>jquery.accordion is dual licensed under the MIT and GPL licenses:</p>
+            <p>
+                <a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a><br>
+                <a href="http://www.gnu.org/licenses/gpl.html">http://www.gnu.org/licenses/gpl.html</a>
+            </p>
+        </section>
+    </div>
+    <script src="vendor/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="jquery.accordion.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+        $('#sample1 ul').accordion();
+        $('#sample2 ul').accordion({toggle: true, start: 0});
+        $('#sample3 ul').accordion({multiple: true});
+        $('#sample4 ul').accordion({toggle: true});
+    </script>
+</body>
 </html>

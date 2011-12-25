@@ -42,18 +42,11 @@ table {
     border-spacing: 0;
 }
 
-html {
+body {
     background: #aeaeae;
     color: #000;
-    font-family: Arial, Verdana, sans-serif;
+    font-family: Helvetica, Arial, FreeSans, san-serif;
     font-size: 13px;
-}
-
-body {
-    background: #fff;
-    margin: 20px auto;
-    padding: 20px;
-    width: 500px;
 }
 
 p, code, h1, h2 {
@@ -65,9 +58,13 @@ ul {
     width: 300px;
 }
 
-img {
+ul img {
     margin: 5px;
     width: 285px;
+}
+
+a {
+    text-decoration: none;
 }
 
 code {
@@ -86,6 +83,19 @@ h1 {
 h2 {
     font-size: 1.5em;
     font-weight: bold;
+}
+
+section {
+    border: 0 solid #aeaeae;
+    border-width: 1px 0 0 0;
+    padding-bottom: 1em;
+}
+
+#wrapper {
+    background: #fff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 600px;
 }
 
 .handle {
@@ -129,4 +139,15 @@ h2 {
 
 .open .handle:before {
     content: '» ';
+}
+
+.fork img {
+    border: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.download {
+    float: right;
 }
