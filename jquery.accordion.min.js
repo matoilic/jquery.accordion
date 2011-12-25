@@ -1,7 +1,7 @@
 /**
- * jquery.accordion https://github.com/matoilic/jquery.accordion
+ * jquery.accordion http://matoilic.github.com/jquery.accordion/
  *
- * @version v0.1.1
+ * @version v0.1.0
  * @author Mato Ilic <info@matoilic.ch>
  * @copyright 2011 Mato Ilic
  *
