@@ -1,16 +1,16 @@
 /**
  * jquery.accordion http://matoilic.github.com/jquery.accordion/
  *
- * @version v0.1.0
+ * @version v0.1.1
  * @author Mato Ilic <info@matoilic.ch>
- * @copyright 2011 Mato Ilic
+ * @copyright 2013 Mato Ilic
  *
  * Dual licensed under the MIT and GPL licenses:
  * http://www.opensource.org/licenses/mit-license.php
  * http://www.gnu.org/licenses/gpl.html
  */
 ;(function($) {
-    var fixIE = ($.browser.msie && parseInt($.browser.version) < 8),
+    var fixIE = isOldInternetExplorer,
         closed = {
             height: 0,
             marginBottom: 0,
@@ -20,6 +20,19 @@
         };
         
     if(fixIE) closed.opacity = 0;
+    
+    function isOldInternetExplorer() {
+        var ua = navigator.userAgent;
+
+    	var match = /(chrome)[ \/]([\w.]+)/.exec( ua ) ||
+    		/(webkit)[ \/]([\w.]+)/.exec( ua ) ||
+    		/(opera)(?:.*version|)[ \/]([\w.]+)/.exec( ua ) ||
+    		/(msie) ([\w.]+)/.exec( ua ) ||
+    		ua.indexOf("compatible") < 0 && /(mozilla)(?:.*? rv:([\w.]+)|)/.exec( ua ) ||
+    		[];
+
+        return (match[1].msie && parseInt(match[2]) < 8);
+    }
     
     function initialize(element, options) {
         var $element = $(element);

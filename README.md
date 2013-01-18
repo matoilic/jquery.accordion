@@ -1,6 +1,6 @@
 # jquery.accordion #
 
-jquery.accordion is a multifunctional accordion plugin for [jQuery](http://jquery.com).
+jquery.accordion is a multifunctional and lightweight accordion plugin for [jQuery](http://jquery.com).
 
 ## Usage ##
 
@@ -32,9 +32,13 @@ Call `accordion` on the target element, e.g. `$('#myaccordion').accordion()`.
 
 * initial release
 
+**0.1.1**
+
+* jQuery 1.9 compatibility
+
 ## Licence ##
 
-Copyright &copy; 2011 Mato Ilic <<info@matoilic.ch>>
+Copyright &copy; 2013 Mato Ilic <<info@matoilic.ch>>
 
 jquery.accordion is dual licensed under the MIT and GPL licenses:
 

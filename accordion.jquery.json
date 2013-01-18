@@ -1,0 +1,40 @@
+{
+  "name": "accordion",
+  "title": "jQuery Accordion",
+  "description": "A multifunctional and lightweight accordion plugin for jQuery.",
+  "keywords": [
+    "accordion",
+    "ui",
+    "navigation",
+    "component"
+  ],
+  "version": "0.1.1",
+  "author": {
+    "name": "Mato Ilic",
+    "url": "http://matoilic.ch"
+  },
+  "maintainers": [
+    {
+      "name": "Mato Ilic",
+      "email": "info@matoilic.ch",
+      "url": "http://matoilic.ch"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jquery/jquery-color/blob/2.1.2/MIT-LICENSE.txt"
+    },
+    {
+      "type": "GPL",
+      "url": "http://www.gnu.org/licenses/gpl.html"
+    }
+  ],
+  "bugs": "https://github.com/matoilic/jquery.accordion/issues",
+  "homepage": "http://matoilic.github.com/jquery.accordion/",
+  "docs": "http://matoilic.github.com/jquery.accordion/",
+  "download": "http://matoilic.github.com/jquery.accordion/",
+  "dependencies": {
+    "jquery": ">=1.8"
+  }
+}
