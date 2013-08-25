@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>jquery.accordion specs</title>
+	
+	<link rel="stylesheet" href="../vendor/jasmine/jasmine.css" type="text/css" charset="utf-8">
+    <style>
+        .panel {
+            height: 80px;
+            margin: 1px 0px 2px 0;
+            padding: 1px 0 2px 0;
+        }
+
+        #wrapper {
+            display: none;
+        }
+    </style>
+
+	<script src="../vendor/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../jquery.accordion.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="../vendor/jasmine/jasmine.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../vendor/jasmine/jasmine-html.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="accordion.js" type="text/javascript" charset="utf-8"></script>
+	
+    <script type="text/javascript">
+        (function($) {
+            var jasmineEnv = jasmine.getEnv();        
+            jasmineEnv.updateInterval = 1000;
+            var trivialReporter = new jasmine.TrivialReporter();
+            jasmineEnv.addReporter(trivialReporter);
+    
+            jasmineEnv.specFilter = function(spec) {
+                return trivialReporter.specFilter(spec);
+            };
+    
+            $(window).load(function() {
+                jasmineEnv.execute();
+            });
+        })(jQuery);
+    </script>
+</head>
+<body>
+    <script type="text/template" id="template">
+        <ul id="accordion">
+            <li>
+                <div class="handle">Handle 1</div>
+                <div class="panel">Panel 1</div>
+            </li>
+            <li>
+                <div class="handle">Handle 2</div>
+                <div class="panel">Panel 2</div>
+            </li>
+        </ul>
+
+        <ul id="static-accordion">
+            <li class="static">
+                <div class="handle">Handle 1</div>
+                <div class="panel">Panel 1</div>
+            </li>
+            <li>
+                <div class="handle">Handle 2</div>
+                <div class="panel">Panel 2</div>
+            </li>
+        </ul>
+    </script>
+    <div id="wrapper"></div>
+</body>
+</html>
