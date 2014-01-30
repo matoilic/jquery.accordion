@@ -44,3 +44,6 @@ jquery.accordion is dual licensed under the MIT and GPL licenses:
 
 * http://www.opensource.org/licenses/mit-license.php 
 * http://www.gnu.org/licenses/gpl.html
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/matoilic/jquery.accordion/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
